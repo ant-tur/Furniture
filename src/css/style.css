@@ -1,3 +1,209 @@
 * {
 	font-family: 'Nunito Sans', sans-serif;
 }
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #1B1A1A;
+}
+
+.container {
+	width: 1110px;
+	margin: 0 auto;
+}
+
+header {
+	position: relative;
+	background: url(../img/first_bg.jpg) center center/cover no-repeat;
+	height: 821px;
+
+}
+
+nav {
+	height: 79px;
+	background: #D3CBC5;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 0 166px 0 160px;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+}
+
+.logo:hover {
+	text-decoration: none;
+}
+
+.logo_title {
+	margin-left: 5.5px;
+
+	font-family: 'Oswald';
+	font-weight: 400;
+	font-size: 16px;
+	letter-spacing: 0.035em;
+	color: #555555;
+}
+
+.menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+	min-width: 515px;
+	list-style-type: none;
+}
+
+.menu_link {
+	font-weight: 300;
+	font-size: 16px;
+	color: #1B1A1A;
+}
+
+.menu_item .active {
+	text-decoration: underline;
+}
+
+.icons {
+	display: flex;
+	justify-content: space-between;
+	width: 70px;
+}
+
+.banner {
+	position: absolute;
+	width: 406px;
+	height: 309px;
+	left: 166px;
+	top: 235px;
+}
+
+.divider {
+	position: relative;
+}
+
+.divider .divider_vert {
+	position: absolute;
+	top: 102px;
+	left: -103px;
+	width: 261px;
+	height: 0px;
+	border: 1px solid #6B6C71;
+	background-color: #6B6C71;
+	transform: rotate(90deg);
+
+}
+
+.banner .banner_text {
+	margin-left: 45px;
+}
+
+.banner .divider_hor {
+	width: 292px;
+	height: 0px;
+	border: 1px solid #6B6C71;
+	background-color: #6B6C71;
+	transform: rotate(-180deg);
+	margin-top: 28px;
+}
+
+.banner .banner_title {
+	font-weight: 400;
+	font-size: 16px;
+	color: #2C314B;
+	margin-top: 25px;
+}
+
+.banner .banner_header {
+	font-weight: 600;
+	font-size: 50px;
+	line-height: 60px;
+	color: #1B1A1A;
+	margin: 0;
+	margin-top: 7px;
+
+}
+
+.banner .banner_price {
+	display: flex;
+	align-items: baseline;
+	margin-top: 15px;
+}
+
+.banner .banner_price .price {
+	font-weight: 400;
+	font-size: 24px;
+	color: #121211;
+	margin-right: 10px;
+}
+
+.banner .banner_price .starting {
+	font-weight: 400;
+	font-size: 16px;
+	color: #878787;
+}
+
+.button {
+	position: relative;
+	width: 125px;
+	height: 50px;
+
+}
+
+.button .btn {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 115px;
+	height: 40px;
+	background: #1C1B1B;
+
+	font-weight: 600;
+	font-size: 14px;
+	color: #FFFFFF;
+}
+
+.button .border_top {
+	position: absolute;
+	top: 5px;
+	width: 120px;
+	border: 1px solid #000;
+	background-color: #000;
+}
+
+.button .border_bottom {
+	position: absolute;
+	left: 5px;
+	top: 44px;
+	width: 120px;
+	border: 1px solid #000;
+	background-color: #000;
+}
+
+.button .border_left {
+	position: absolute;
+	left: -17px;
+	top: 22px;
+	width: 45px;
+	border: 1px solid #000;
+	background-color: #000;
+	transform: rotate(90deg);
+}
+
+.button .border_right {
+	position: absolute;
+	left: 96px;
+	top: 28px;
+	width: 45px;
+	border: 1px solid #000;
+	background-color: #000;
+	transform: rotate(90deg);
+}
