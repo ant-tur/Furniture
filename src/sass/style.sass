@@ -68,39 +68,30 @@ nav
   height: 309px
   left: 166px
   top: 235px
-
-.divider
-  position: relative
-
-  .divider_vert
+  &::before, &::after
+    content: ''
     position: absolute
-    top: 102px
-    left: -103px
-    width: 261px
-    height: 0px
+    display: block
     border: 1px solid #6B6C71
-    background-color: #6B6C71
-    transform: rotate(90deg)
-
-.banner
-  .banner_text
-    margin-left: 45px
-
-  .divider_hor
+    background-color: #6b6c71
+  &::before
+    left: 24px
+    height: 261px
+    width: 1px
+  &::after
+    height: 1px
     width: 292px
-    height: 0px
-    border: 1px solid #6B6C71
-    background-color: #6B6C71
-    transform: rotate(-180deg)
-    margin-top: 28px
+    bottom: 281px
 
-  .banner_title
+  &_text
+    margin: 50px 0 0 45px
+  
+  &_title
     font-weight: 400
     font-size: 16px
     color: #2C314B
     margin-top: 25px
-
-  .banner_header
+  &_header
     font-weight: 600
     font-size: 50px
     line-height: 60px
@@ -108,67 +99,106 @@ nav
     margin: 0
     margin-top: 7px
 
-  .banner_price
+  &_price
     display: flex
     align-items: baseline
     margin-top: 15px
-
-    .price
+    &_number
       font-weight: 400
       font-size: 24px
       color: #121211
       margin-right: 10px
-
-    .starting
+    &_starting
       font-weight: 400
       font-size: 16px
       color: #878787
 
-.button
+
+.btn
   position: relative
-  width: 125px
-  height: 50px
-
-  .btn
+  width: 114px
+  height: 37px
+  background: #1C1B1B
+  font-weight: 600
+  font-size: 14px
+  color: #FFFFFF
+  margin-top: 15px
+  transition: all 500ms ease
+  border: none
+  &:hover
+    background: #DBD4CE
+    color: #000
+  &::before, &::after
     position: absolute
-    top: 5px
-    left: 5px
-    width: 115px
-    height: 40px
-    background: #1C1B1B
-    font-weight: 600
-    font-size: 14px
-    color: #FFFFFF
-
-  .border_top
+    content: ''
+    display: block
+    border-color: #1C1B1B
+    border-style: solid
+  &::before
+    width: 108%
+    height: 125%
+    top: 0px
+    left: -9px
+    border-width: 1px 1px 0 0
+  &::after
+    width: 108%
+    height: 125%
+    top: -9px
+    left: 0px
+    border-width: 0 0 1px 1px
+  &_slider
     position: absolute
-    top: 5px
-    width: 120px
-    border: 1px solid #000
-    background-color: #000
+    top: 146px
+    left: 36px
+    background: #e5e6e6
+    color: #1B1A1A
+    z-index: 1
+    &:hover
+      background: #1b1a1a
+      color: #fff
 
-  .border_bottom
-    position: absolute
-    left: 5px
-    top: 44px
-    width: 120px
-    border: 1px solid #000
-    background-color: #000
 
-  .border_left
-    position: absolute
-    left: -17px
-    top: 22px
-    width: 45px
-    border: 1px solid #000
-    background-color: #000
-    transform: rotate(90deg)
 
-  .border_right
+.slider
+  height: 657px
+  position: relative
+  padding: 94px 0 114px 0
+  &_arrow_left
     position: absolute
-    left: 96px
-    top: 28px
-    width: 45px
-    border: 1px solid #000
-    background-color: #000
-    transform: rotate(90deg)
+    top: 302px
+    left: 74px
+    cursor: pointer
+  &_arrow_right
+    position: absolute
+    top: 302px
+    right: 74px
+    cursor: pointer
+  &_wrapper
+    display: flex
+    justify-content: space-between
+  &_card
+    position: relative
+    width: 350px
+    height: 449px
+    background: #E5E6E6
+    &_title 
+      margin: 50px 100px 0 34px 
+      font-weight: 400
+      font-size: 30px
+      line-height: 40px
+      color: #282828
+    &_1
+      img
+        position: absolute
+        top: 200px
+        left: 127px
+    &_2
+      img
+        position: absolute
+        top: 189px
+        left: 0
+    &_3
+      img
+        position: absolute
+        top: 217px
+        left: 68px
